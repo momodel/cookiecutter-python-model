@@ -1,0 +1,7 @@
+{
+    "author_name": "",
+    "module_name": "jupyterlab_myextension",
+    "module_type": "toolkit/model",
+    "module_description": "A MO module",
+    "repository": "https://github.com/my_name/mo_mymodule"
+}
