@@ -1,19 +1,35 @@
+default: &default
+  default: null
+  name: ''
+  des: ''
+  range: null
+  required: false
+  type: input
+  value: null
+  value_type: str
+
 author_name: {{cookiecutter.author_name}}
 module_name: {{cookiecutter.module_name}}
 module_description: {{cookiecutter.module_description}}
 module_params:
   predict: &params
-    -param_1:
+    param_1:
+      <<: *default
       name:
       type:
       range:
-    -param_2:
+    param_2:
+      <<: *default
       name:
       type:
       range:
   train:
     <<: *params
-    data_path: > ./data
+    data_path:
+      <<: *default
+      name: data_path
+      value_type: str
+      range: null
 
 
     
