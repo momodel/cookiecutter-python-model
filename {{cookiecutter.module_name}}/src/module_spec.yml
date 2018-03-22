@@ -11,26 +11,27 @@ default: &default
 author_name: {{cookiecutter.author_name}}
 module_name: {{cookiecutter.module_name}}
 module_description: {{cookiecutter.module_description}}
-module_params:
+input:
+  train: &params
+    param_1:
+      <<: *default
+      name: file_path,
   predict: &params
     param_1:
       <<: *default
-      name:
-      type:
-      range:
+      name: DayofMonth,
+      value_type: int
+      range: null
     param_2:
       <<: *default
-      name:
-      type:
-      range:
-  train:
-    <<: *params
-    data_path:
-      <<: *default
-      name: data_path
-      value_type: str
+      name: DayOfWeek
+      value_type: int
       range: null
-
-
-    
-  
+output:
+    predict:
+        flight_no:
+          type: int
+          value: null
+        flight_date:
+          type: str
+          value: null
