@@ -8,30 +8,30 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 class {{cookiecutter.module_name}}(object):
 
-    def __init__(self, feed={}):
+    def __init__(self, input={}):
         '''
 
-        :param feed:
+        :param input:
         '''
         self.checkpoint_dir = os.path.dirname(__file__)+"/checkpoint"
 
-    def train(self, feed={}):
+    def train(self, input={}):
         '''
 
-        :param feed:
+        :param input:
         :return:
         '''
 
-    def predict(self, feed={}):
+    def predict(self, input={}):
         '''
 
-        :param feed:
+        :param input:
         :return:
         '''
 
     def load_model(self, file=self.checkpoint_dir+"/{{cookiecutter.module_name}}.pkl"):
         '''
 
-        :param feed:
+        :param input:
         :return:
         '''
