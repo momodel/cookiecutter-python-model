@@ -1,37 +1,47 @@
-default: &default
-  default: null
-  name: ''
-  des: ''
-  range: null
-  required: false
-  type: input
-  value: null
-  value_type: str
+# reference block
+default_value_range:
+  int: &default_int_range 0-65536 # e.g. 0-65536 | 2, 4, 6 | >10
+  float: &default_float_range 0-65536
+  datetime: &default_datetime_range XXXXX
 
-author_name: {{cookiecutter.author_name}}
-module_name: {{cookiecutter.module_name}}
-module_description: {{cookiecutter.module_description}}
-input:
+param_spec: &default
+  name:               # required,
+  value_type:         # required, available Types: int, str, float, img, datetime, [int], [str], [float]
+  default_value:      # required, must match the value_type
+  value_range:        # optional, reference to default_value_range
+  des:
+  optional: False
+
+
+
+# basic block
+author_name: author_expamle
+module_name: flight_delay_prediction
+module_description: A MO module
+
+input: # mapping to input parameter in main.py
   train: &params
     param_1:
       <<: *default
-      name: file_path,
+      name: file_path
+      value_type: "str"
+       default_value: './data/data.csv'
   predict: &params
     param_1:
       <<: *default
-      name: DayofMonth,
-      value_type: int
-      range: null
+      name: "DayofMonth"
+      value_type: "int"
+      default_value: 21
     param_2:
       <<: *default
-      name: DayOfWeek
-      value_type: int
-      range: null
+      name: "DayOfWeek"
+      value_type: "int"
+      default_value: 1
 output:
     predict:
         flight_no:
-          type: int
-          value: null
+          name: 'flight_no'
+          type: "int"
         flight_date:
-          type: str
-          value: null
+          name: 'flight_date'
+          type: "str"
