@@ -23,11 +23,11 @@ class {{cookiecutter.module_name}}(object):
         '''
 
     def predict(self, feed={}):
-       '''
+        '''
 
-       :param feed:
-       :return:
-       '''
+        :param feed:
+        :return:
+        '''
 
     def load_model(self, file=self.checkpoint_dir+"/{{cookiecutter.module_name}}.pkl"):
         '''
