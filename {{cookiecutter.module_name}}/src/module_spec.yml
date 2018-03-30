@@ -25,7 +25,7 @@ input: # mapping to input parameter in main.py
       <<: *default
       name: file_path
       value_type: "str"
-       default_value: './data/data.csv'
+      default_value: './data/data.csv'
   predict: &params
     param_1:
       <<: *default
