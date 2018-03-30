@@ -20,13 +20,13 @@ module_name: flight_delay_prediction
 module_description: A MO module
 
 input: # mapping to input parameter in main.py
-  train: &params
+  train:
     param_1:
       <<: *default
       name: file_path
       value_type: "str"
       default_value: './data/data.csv'
-  predict: &params
+  predict:
     param_1:
       <<: *default
       name: "DayofMonth"
