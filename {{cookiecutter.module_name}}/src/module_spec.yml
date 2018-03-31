@@ -6,7 +6,7 @@ default_value_range:
 
 param_spec: &default
   name:               # required,
-  value_type:         # required, available Types: int, str, float, img, datetime, [int], [str], [float]
+  value_type:         # required, available Types: "int", "str", "float", "img", "datetime", "[int]", "[str]", "[float]"
   default_value:      # required, must match the value_type
   value_range:        # optional, reference to default_value_range
   des:
