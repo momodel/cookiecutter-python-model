@@ -1,8 +1,8 @@
 # reference block
 default_value_range:
-  int: &default_int_range 0-65536 # e.g. 0-65536 | 2, 4, 6 | >10
-  float: &default_float_range 0-65536
-  datetime: &default_datetime_range XXXXX
+  int: &default_int_range "0-65536" # e.g. "0-65536" | [2, 4, 6] | ">10"
+  float: &default_float_range "0-65536"
+  datetime: &default_datetime_range "xxxx"
 
 param_spec: &default
   name:               # required,
