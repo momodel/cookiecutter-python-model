@@ -26,6 +26,7 @@ input: # mapping to input parameter in main.py
 #      name: file_path
 #      value_type: "str"
 #      default_value: './data/data.csv'
+
   predict:
 #    param_1:
 #      <<: *default
@@ -37,6 +38,7 @@ input: # mapping to input parameter in main.py
 #      name: "DayOfWeek"
 #      value_type: "int"
 #      default_value: 1
+
 output:
   predict:
 #    flight_no:
