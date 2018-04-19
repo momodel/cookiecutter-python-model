@@ -29,7 +29,7 @@ class {{cookiecutter.module_name}}(object):
         :return:
         '''
 
-    def load_model(self, file=self.checkpoint_dir+"/{{cookiecutter.module_name}}.pkl"):
+    def load_model(self, file=os.path.dirname(__file__)+"/checkpoint"+"/{{cookiecutter.module_name}}.pkl"):
         '''
 
         :param input:
