@@ -6,7 +6,7 @@
 
 param_spec: &default
   name:               # required,
-  value_type:         # required, available Types: "int", "str", "float", "datetime", "[int]", "[str]", "[float]", "dataframe", etc.
+  value_type:         # required, available Types: "int", "str", "float", "datetime", "[int]", "[str]", "dataframe", etc.
   default_value:      # required, must match the value_type
   value_range:        # optional, reference to default_value_range
   des:
