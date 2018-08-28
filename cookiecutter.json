@@ -3,5 +3,6 @@
     "module_name": "mo_mymodule",
     "module_type": "toolkit/model",
     "module_description": "A MO module",
+    "encoded_name": "any name",
     "repository": "https://github.com/my_name/mo_mymodule"
 }
