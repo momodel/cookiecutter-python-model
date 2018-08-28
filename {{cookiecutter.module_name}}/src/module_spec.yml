@@ -1,49 +1,37 @@
 # reference block
 #default_value_range:
-#  int: &default_int_range "0-65536" # e.g. "0-65536" | [2, 4, 6] | ">=10" | "<=10"
+#  int: &default_int_range "0-65536" # e.g. "0-65536" | [2, 4, 6] | ">=10" | "<=10", etc.
 #  float: &default_float_range "0-65536"
 #  datetime: &default_datetime_range "xxxx"
 
 param_spec: &default
   name:               # required,
-  value_type:         # required, available Types: "int", "str", "float", "img", "datetime", "[int]", "[str]", "[float]"
+  value_type:         # required, available Types: "int", "str", "float", "img", "datetime", "[int]", "[str]", "[float]", etc.
   default_value:      # required, must match the value_type
   value_range:        # optional, reference to default_value_range
   des:
   optional: False
 
-
-
-# basic block
-author_name: {{cookiecutter.module_author}}
-module_name: {{cookiecutter.module_name}}
-module_description: {{cookiecutter.module_description}}
-
 input: # mapping to input parameter in main.py
   train:
-#    param_1:
+#    file_path:
 #      <<: *default
-#      name: file_path
 #      value_type: "str"
 #      default_value: './data/data.csv'
 
   predict:
-#    param_1:
+#    DayofMonth:
 #      <<: *default
-#      name: "DayofMonth"
 #      value_type: "int"
 #      default_value: 21
-#    param_2:
+#    DayOfWeek:
 #      <<: *default
-#      name: "DayOfWeek"
 #      value_type: "int"
 #      default_value: 1
 
 output:
   predict:
 #    flight_no:
-#      name: 'flight_no'
 #      type: "int"
 #    flight_date:
-#      name: 'flight_date'
 #      type: "str"
