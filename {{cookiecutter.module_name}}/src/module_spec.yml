@@ -32,6 +32,6 @@ input: # mapping to input parameter in main.py
 output:
   predict:
 #    flight_no:
-#      type: "int"
+#      value_type: "int"
 #    flight_date:
-#      type: "str"
+#      value_type: "str"
