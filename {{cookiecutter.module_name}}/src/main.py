@@ -14,6 +14,7 @@ class {{cookiecutter.module_name}}(object):
         :param input:
         '''
         self.checkpoint_dir = os.path.dirname(__file__)+"/checkpoint"
+        pass
 
     def train(self, input={}):
         '''
@@ -21,6 +22,7 @@ class {{cookiecutter.module_name}}(object):
         :param input:
         :return:
         '''
+        pass
 
     def predict(self, input={}):
         '''
@@ -28,6 +30,7 @@ class {{cookiecutter.module_name}}(object):
         :param input:
         :return:
         '''
+        pass
 
     def load_model(self, file=os.path.dirname(__file__)+"/checkpoint"+"/{{cookiecutter.module_name}}.pkl"):
         '''
@@ -35,3 +38,11 @@ class {{cookiecutter.module_name}}(object):
         :param input:
         :return:
         '''
+        pass
+
+
+## Note: Uncomment this block before creating a crowdsourcing task
+# if __name__ == '__main__':
+#     func_name = sys.argv[0]
+#     instance = {{cookiecutter.module_name}}()
+#     getattr(instance, func_name)()
