@@ -13,7 +13,7 @@ class {{cookiecutter.module_name}}(object):
 
         :param input:
         '''
-        self.checkpoint_dir = os.path.dirname(__file__)+"/checkpoint"
+        self.checkpoint_dir = os.path.dirname(__file__)+"/results"
         pass
 
     def train(self, input={}):
@@ -32,7 +32,7 @@ class {{cookiecutter.module_name}}(object):
         '''
         pass
 
-    def load_model(self, file=os.path.dirname(__file__)+"/checkpoint"+"/{{cookiecutter.module_name}}.pkl"):
+    def load_model(self, file=os.path.dirname(__file__)+"/results"+"/{{cookiecutter.module_name}}.pkl"):
         '''
 
         :param input:
