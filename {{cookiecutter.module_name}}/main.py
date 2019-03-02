@@ -1,4 +1,3 @@
-
 import os
 import sys
 
@@ -13,7 +12,7 @@ class {{cookiecutter.module_name}}(object):
 
         :param input:
         '''
-        self.checkpoint_dir = "./results"
+        self.checkpoint_dir = os.path.dirname(__file__) + "/results"
         pass
 
     def train(self, conf={}):
@@ -38,7 +37,7 @@ class {{cookiecutter.module_name}}(object):
         # add your code
         return {'ret1': 'cat', 'ret2': 'dog'}
 
-    def load_model(self, file="./results/{{cookiecutter.module_name}}.pkl"):
+    def load_model(self):
         '''
 
         :param conf:
