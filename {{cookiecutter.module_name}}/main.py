@@ -5,6 +5,7 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 
 
+# Please don't modify the class name
 class {{cookiecutter.module_name}}(object):
 
     def __init__(self, conf={}):
@@ -21,6 +22,7 @@ class {{cookiecutter.module_name}}(object):
         :param conf:
         :return:
         '''
+        # Please write your parameters and return values following the pattern bellow
         param1 = conf['param1']  # value_type: str # description: some description
         param2 = conf['param2']  # value_type: str # description: some description
         # add your code
@@ -32,6 +34,7 @@ class {{cookiecutter.module_name}}(object):
         :param conf:
         :return:
         '''
+        # Please write your parameters and return values following the pattern bellow
         param1 = conf['param1']  # value_type: str # description: some description
         param2 = conf['param2']  # value_type: str # description: some description
         # add your code
