@@ -42,7 +42,7 @@ class {{cookiecutter.module_name}}(object):
 
     def load_model(self):
         '''
-        load your model weight and structure
+        load your trained model weight and structure
         :param conf:
         :return: model instance
         '''
