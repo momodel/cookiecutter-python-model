@@ -17,7 +17,7 @@ class {{cookiecutter.module_name}}(object):
 
     def train(self, conf={}):
         '''
-
+        training/fitting code for your model
         :param conf:
         :return:
         '''
@@ -28,7 +28,7 @@ class {{cookiecutter.module_name}}(object):
 
     def predict(self, conf={}):
         '''
-
+        predict/inference code for your model
         :param conf:
         :return:
         '''
@@ -39,15 +39,9 @@ class {{cookiecutter.module_name}}(object):
 
     def load_model(self):
         '''
-
+        load your model weight and structure
         :param conf:
-        :return:
+        :return: model instance
         '''
         pass
-
-
-## Note: Uncomment this block before creating a crowdsourcing task
-# if __name__ == '__main__':
-#     func_name = sys.argv[0]
-#     instance = {{cookiecutter.module_name}}()
-#     getattr(instance, func_name)()
+ 

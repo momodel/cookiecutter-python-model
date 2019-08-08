@@ -9,7 +9,7 @@ param_spec: &default
   value_type:         # required, available Types: "int", "str", "float", "datetime", "[int]", "[str]", "dataframe", etc.
   default_value:      # required, must match the value_type
   value_range:        # optional, reference to default_value_range
-  des:
+  description:
   optional: False
 
 input: # mapping to input parameter in main.py
