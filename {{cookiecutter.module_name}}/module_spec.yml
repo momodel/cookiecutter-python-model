@@ -1,3 +1,5 @@
+# File to specify your module parameters
+
 # reference block
 # default_value_range:
 #  int: &default_int_range "0-65536" # e.g. "0-65536" | [2, 4, 6] | ">=10" | "<=10", etc.
