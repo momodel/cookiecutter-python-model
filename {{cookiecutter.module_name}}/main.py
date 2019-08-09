@@ -1,3 +1,6 @@
+"""
+main file for the model
+"""
 import os
 import sys
 
